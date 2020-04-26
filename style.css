@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial';
+}
+
+.wrapper {
+  height: 100vh;
+  padding-top: 15px;
+  display: grid;
+  grid-template-rows: 32px 1fr 81.5px;
+}
+
+.header {
+  grid-row: 1 / span 1;
+}
+
+.main {
+  grid-row: 2 / span 1;
+}
+
+.footer {
+  grid-row: -2 / -1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.navigation  ul{
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  grid-template-rows: 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+  padding-right: 30px;
+}
+
+.navigation li {
+  display: block;
+}
+
+.navigation li:hover {
+  cursor: pointer;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+  color: #6f6f6f;
+}
+
+.user-image {
+  border-radius: 50%;
+}
+
+.cubes, 
+.user-image {
+  vertical-align: top;
+}
+
+.navigation a {
+  vertical-align: middle;
+}
+
+/* Main area */
+
+.main {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  gap: 25px;
+  align-content: start;
+  justify-items: center;
+}
+
+.main .google-logo {
+  margin: 150px 0px 0px 0px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.magnifier {
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  padding: 7px;
+  width: 32px;
+  opacity: 0.40;
+}
+
+.input {
+  width: 584px;
+  height: 44px;
+  border-radius: 30px;
+  border: 1px solid #dfe1e5;
+  padding-left: 50px; 
+}
+
+.input:hover,
+.input:focus {
+  border: none;
+  box-shadow: 0 0 5px #bbbbbb;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 36px;
+  gap: 12px;
+  margin-top: 6px;
+  margin-right: 10px;
+}
+
+.main p {
+  margin-top: 6px;
+}
+
+.btn1,
+.btn2 {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.btn1:hover,
+.btn2:hover {
+  cursor: pointer;
+  margin: -1px; 
+  border: 1px solid #e4e4e4;
+  box-shadow: 0 0 2px #f2f2f2;
+}
+
+.btn1:hover a,
+.btn2:hover a {
+  color: black;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #6f6f6f;
+}
+
+.main p {
+  font-size: 13px;
+}
+
+.main .srpski {
+  margin-left: 5px;
+}
+
+.main p a {
+  text-decoration: none;
+  color:#1a0dab;
+}
+
+.main p a:hover{
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: -1px;
+  display: grid;
+  grid-template-rows: 41.5px 40px;
+  font-size: 15px;
+  background-color: #f2f2f2;
+  color: #6f6f6f;
+}
+
+.location {
+  grid-row: 1 / span 1;
+  border-top: 1px solid #e4e4e4;
+  margin-bottom: -1px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.location p {
+  padding-left: 30px;
+  vertical-align: top;
+  margin: 10px 0 0 0;
+}
+
+.information {
+  grid-row: -2 / -1;
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 13px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.information .left {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  grid-template-rows: 1fr;
+  gap: 26.5px;
+  align-items: center;
+  justify-content: start;
+}
+
+.information .right {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-rows: 1fr;
+  gap: 25px;
+  align-items: center;
+  justify-content: end;
+}
+
+.information li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.information li a:hover {
+  text-decoration: underline;
+}
